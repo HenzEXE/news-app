@@ -43,6 +43,8 @@ function ProgrammingPage() {
                     window.open(web_url, "_blank", "noopener,noreferrer")
                   }}
                   onSave={() => {
+                    console.log("SAVED")
+                    console.log(n)
                     dispatch({
                       type: NEWS_REDUCER_CASES.SAVE_NEWS,
                       news: n,

@@ -18,7 +18,7 @@ function SavedNewsPage() {
         </section>
         <section className={styles.newsContainer}>
           {newsReducer.savedNews.map((n, i) => {
-            const { headline, abstract, source, byline,web_url} = n;
+            const { headline, abstract, source, byline, web_url} = n;
             return (
               <NewsCard
                 key={n._id}
@@ -30,10 +30,11 @@ function SavedNewsPage() {
                   console.log(web_url)
                   window.open(web_url, "_blank", "noopener,noreferrer")
                 }}
-                onSave={() => {
+                showUnsave={true}
+                onUnsave={() => {
                   dispatch({
-                    type: NEWS_REDUCER_CASES.SAVE_NEWS,
-                    news: n,
+                    type: NEWS_REDUCER_CASES.UNSAVE_NEWS,
+                    newsId: n._id,
                   });
                 }}
               />

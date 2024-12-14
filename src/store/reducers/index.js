@@ -3,6 +3,7 @@ export const NEWS_REDUCER_CASES = {
   FETCHING_NEWS: "FETCHING_NEWS",
   DONE_FETCHING_NEWS: "DONE_FETCHING_NEWS",
   SAVE_NEWS: "SAVE_NEWS",
+  UNSAVE_NEWS: "UNSAVE_NEWS"
 };
 
 const newsState = {
@@ -40,6 +41,14 @@ const newsReducer = (state = newsState, action) => {
       return {
         ...state,
         savedNews: savedNews,
+      };
+    }
+    case NEWS_REDUCER_CASES.UNSAVE_NEWS: {
+      console.log("#7 NEWS_REDUCER_CASES.UNSAVE_NEWS");
+      const filteredSavedNews = state.savedNews.filter(news => news._id !== action.newsId);
+      return {
+        ...state,
+        savedNews: filteredSavedNews,
       };
     }
     default:

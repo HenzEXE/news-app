@@ -15,7 +15,7 @@ const truncateChar = (text) => {
 }
 
 function NewsCard(props) {
-    const { headline,  abstract,  source, author, onSave, onViewNewDetail} = props
+    const { headline,  abstract,  source, author, onSave, onViewNewDetail, showUnsave, onUnsave} = props
     return (
         <section className={styles.newsCard}>
             <h3>{source}</h3>
@@ -31,14 +31,23 @@ function NewsCard(props) {
                         console.log("DEBUG: NEW TAB OPENED")
 
             }}>News Page</button>
-            <button 
+            
+            {showUnsave ? <button 
+                className={styles.saveButton} 
+                onClick={() => {
+                    onUnsave()
+                }}>
+                    Unsave
+                </button>
+                :   <button 
                 className={styles.saveButton}
                 onClick={() => {
                     onSave()
                 }}
             >
                 Save
-            </button>
+            </button>}
+
         </div>
         </section>
     )
