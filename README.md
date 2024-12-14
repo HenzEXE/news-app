@@ -72,4 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+### Thanks For The Template, Made By Airel Jordan
+
 ### Build By Muhamad Hendy Saputra & Redi Ahmad Supriyatna
