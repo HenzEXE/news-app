@@ -11,8 +11,7 @@ function CovidPage() {
       });
       const dispatch = useDispatch();
     
-      useEffect(() => { 
-        console.log("env:", process.env.REACT_APP_API_KEY);
+      useEffect(() => {
         console.log("#1 useEffect()");
         const query = {
           q: "Covid",
