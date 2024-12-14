@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/news-app-eight-rouge?style=for-the-badge&name=VERCEL)
+
 ### `npm start`
 
 Runs the app in the development mode.\
