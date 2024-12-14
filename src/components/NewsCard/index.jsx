@@ -33,7 +33,7 @@ function NewsCard(props) {
             }}>News Page</button>
             
             {showUnsave ? <button 
-                className={styles.saveButton} 
+                className={styles.unsaveButton} 
                 onClick={() => {
                     onUnsave()
                 }}>
