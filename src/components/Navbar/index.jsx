@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.module.css"; // Impor file CSS jika diperlukan
+import "bootstrap/dist/css/bootstrap.min.css";  // Pastikan CSS Bootstrap diimpor
+import "bootstrap/dist/js/bootstrap.bundle.min.js";  // Pastikan JavaScript Bootstrap diimpor
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");
