@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 LINK DEPLOYMENT :  
-[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/news-app-eight-rouge)](https://news-app-eight-rouge.vercel.app/)
+[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/news-app-capstone-H8)](https://news-app-capstone-H8.vercel.app/)
 
 
 ### `npm start`
